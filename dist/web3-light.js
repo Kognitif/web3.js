@@ -5367,7 +5367,7 @@ var methods = function () {
         name: 'getTransactionCount',
         call: 'eth_getTransactionCount',
         params: 2,
-        inputFormatter: [null, formatters.inputDefaultBlockNumberFormatter],
+        inputFormatter: [null, formatters.isPredefinedBlockNumber],
         outputFormatter: utils.toDecimal
     });
 
